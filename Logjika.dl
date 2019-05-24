@@ -1,0 +1,297 @@
+%Pacienti(Pid,Emri,Mbiemri,EmriIPrindit,Gjinia,Adresa,Qyteti,Shteti,Kodi Postal,Alergjjite,Grupi_I_Gjakut)
+
+pacienti(1,'Flutura','Shala','Valon','F','Ulpiana','Prishtinë','Kosovë',10012,'Polenit','B').
+pacienti(2,'Arton','Berisha','Blerim','M','Nënë Tereza','Gjakovë','Kosovë',50012,'Agrumeve','B').
+pacienti(3,'Agron','Gjikolli','Hamit','M','4 Llullat','Prishtinë','Kosovë',10022,'null','A+').
+pacienti(4,'Donika','Begolli','Hysni','F','Kodra e trimave','Prishtinë','Kosovë',10001,'Parfumit','A-').
+pacienti(5,'Zana','Kastrati','Endrit','F','Dëshmorët E Kombit','Pejë','Kosovë',30005,'null',0).
+pacienti(6,'Breta','Krasniqi','Egzon','F','NagipCacaj','Ferizaj','Kosovë',40065,'Pemet','B').
+pacienti(7,'Lediana','Gashi','Bujar','F','7Shtatori','Gjakovë','Kosovë',50065,'null','A+').
+pacienti(8,'Egonis','Shabani','Etnik','M','LuanHaradinaj','Deçan','Kosovë',70012,'Pickimi I insekteve','A+').
+pacienti(9,'Edonis','Osamni','Mentor','M','RrustemBruqi','Deçan','Kosovë',70022,'null','A-').
+pacienti(10,'Korab','Rama','Veton','M','HasanTolaj','Gjilan','Kosovë',60023,'null',0).
+
+
+
+
+%Doktori(Did,Rid,Emri,Mbiemri,Titulli,Telefoni,E-mail,Paga,Adresa,Qyteti,Shteti,KodiPostal)
+
+doktori(1,1,'Orlena','Dulatahu','Proff.Dr.','044/896/654','orlena-dulatahu@hotmail.com',1000,'Ahmet Gjikolli','Gjakovë','Kosovë',50018).
+doktori(2,2,'Shendrit','Breznica','Proff.Dr.','049/265/398','shendrit-breznica@hotmail.com',1000,'Ali Ibra','Prishtinë','Kosovë',10033).
+doktori(3,3,'Arban','Muhaxheri','Dr.Sc.','049/146/967','arban-muhaxheri@hotmai.com',700,'14 Qershori','Ferizaj','Kosovë',40026).
+doktori(4,4,'Seman','Bardhoshi','Proff.Ass.Dr','044/154/763','seman-bardhoshi@hotmail.com',800,'Hasan Dashi','Deçan','Kosovë',70011).
+doktori(5,5,'Sihana','Dujaka','Proff.Ass.Dr','044/154/692','sihana-dujaka@hotmail.com',800,'Drenica','Pejë','Kosovë',30010).
+doktori(6,1,'Rina','Hadri','Proff.Dr.','044/238/961','rina-hadri@hotmail.com',1000,'Haki Taha','Gjilan','Kosovë',60005).
+doktori(7,5,'Arta','Ukaj','Proff.Dr.','049/154/223','arta-ukaj@hotmail.com',1000,'Dëshmorët e lirisë','Prizren','Kosovë',80001).
+doktori(8,5,'Etnik','Rama','Proff.Dr.','044/123/659','etnik-rama@hotmail.com',1000,'Mazllom Cana','Prishtinë','Kosovë',10030).
+doktori(9,2,'Eron','Rraci','Dr.Sc.','044/528/369','eron-rraci@hotmail.com',700,'Mic Sokoli','Gjilan','Kosovë',60011).
+doktori(10,1,'Fjolla','Hasanaj','Dr.Sc.','049/861/964','fjolla-hasanaj@hotmail.com',700,'Migjeni','Skënderaj','Kosovë',90012).
+doktori(11,3,'Alzeta','Shala','Proff.Ass.Dr','044/885/992','alzeta-shala@hotmail.com',800,'Rruga Londra','Gjakovë','Kosovë',50026).
+doktori(12,2,'Laureta','Brahimaj','Dr.Sc','049/365/329','laureta-brahimaj@hotmail.com',700,'Ruga e U?K-së','Podujevë','Kosovë',20003).
+doktori(13,4,'Endi','Qestaj','Proff.Ass.Dr','044/258/654','endi-qestaj@hotmail.com',800,'24 Maji','Prishtinë','Kosovë',10011).
+doktori(14,4,'Gent','Kukalaj','Proff.Dr.','049/233/669','gent-kukalaj@hotmail.com',1000,'Afrim Gashi','Prizren','Kosovë',80065).
+doktori(15,5,'Unik','Ramosaj','Proff.Ass.Dr','044/742/543','unik-ramosaj@hotmail.com',800,'Hamëz Jashari','Prishtinë','Kosovë',10049).
+
+
+
+
+
+%Reparti(RID,Reparti,Shefi_i_repartit)
+
+reparti(1,'Kirurgji','Orlena Dulatahu').
+reparti(2,'Pediatria','Shendrit Breznica').
+reparti(3,'Gjinekologjia','Arban Muhaxheri').
+reparti(4,'Gastreologjia','Seman Bardhoshi').
+reparti(5,'Kardiologjia','Sihana Dujaka').
+
+
+
+
+
+%Sensoret(SID,Statusi_ID,Lloji_ID,Emri,Prodhuesi,Data E Prodhimit)
+
+sensoret(1,1,1,'SENZ_01','Abbott','15/02/2001').
+sensoret(2,1,2,'SENZ_02','Baxter','17/06/2005').
+sensoret(3,1,3,'SENZ_03','Alaris','24/03/2013').
+sensoret(4,1,4,'SENZ_04','Hill-Room','24/01/2014').
+sensoret(5,1,5,'SENZ_05','Hospira','16/12/2000').
+
+
+
+
+
+
+%Sensoret_statusi(Statusi_ID,Statusi)
+
+sensoret_statusi(1,'Funksional').
+sensoret_statusi(2,'Jofunksional').
+
+
+
+
+
+
+
+%Sensoret_llojet(Lloji_ID,Lloji,Sasia)
+
+sensoret_llojet(1,'Sensori I pulsit te zemres',5).
+sensoret_llojet(2,'Sensori I tensionit të gjakut',4).
+sensoret_llojet(3,'Sensori I temperatures',2).
+sensoret_llojet(4,'Sensori I shtypjes',3).
+sensoret_llojet(5,'Sensori I nivelit të oksigjenit ne gjak ',5).
+
+
+
+%Terminet(TID,PID,RID,DID,Statusi_I_Terminit_ID,Data,Koha)
+
+terminet(1,1,3,3,1,'15/06/2016','11:00').
+terminet(2,9,1,1,1,'21/06/2016','12:30').
+terminet(3,8,2,2,0,'17/06/2016','13:00').
+terminet(4,7,3,9,1,'18/06/2016','16:00').
+terminet(5,2,1,1,1,'21/06/2016','19:00').
+terminet(6,6,3,3,1,'25/06/2016','17:30').
+terminet(7,3,5,7,1,'15/06/2016','20:30').
+terminet(8,5,3,3,1,'17/06/2016','16:45').
+terminet(9,8,5,8,1,'29/06/2016','21:00').
+terminet(10,7,2,10,0,'20/06/2016','22:00').
+terminet(11,9,2,2,1,'30/06/2016','21:30').
+terminet(12,10,4,4,1,'29/06/2016','23:00').
+terminet(13,4,1,1,1,'21/06/2016','22:30').
+terminet(14,4,5,7,0,'18/06/2016','7:35').
+terminet(15,2,5,8,1,'23/06/2016','8:40').
+terminet(16,5,5,5,1,'18/06/2016','9:25').
+terminet(17,3,1,6,0,'19/06/2016','17:20').
+terminet(18,6,1,1,1,'17/06/2016','12:40').
+terminet(19,9,5,5,1,'16/06/2016','18:00').
+terminet(20,2,1,6,0,'24/06/2016','17:45').
+
+
+
+
+
+
+
+
+
+
+%Statusi_i_termineve(Statusi_I_Terminit_ID,Anuluar)
+
+statusi_i_termineve(0,'Po').
+statusi_i_termineve(1,'Jo').
+
+
+
+
+
+
+
+%Dhoma(Dhoma_ID,Lloji_i_dhomes_ID,RID,Statusi_ID,Numri_I_Katit,Numri_I_Dhomes)
+
+dhoma(1,1,2,1,1,101).
+dhoma(2,1,4,1,1,102).
+dhoma(3,5,2,1,1,103).
+dhoma(4,4,5,1,2,201).
+dhoma(5,2,3,1,2,202).
+dhoma(6,5,3,1,3,301).
+dhoma(7,3,1,1,2,203).
+dhoma(8,6,4,1,4,401).
+dhoma(9,2,3,1,3,302).
+dhoma(10,3,5,1,2,204).
+dhoma(11,4,2,1,3,303).
+dhoma(12,5,1,1,2,205).
+dhoma(13,3,1,1,3,304).
+dhoma(14,5,5,1,2,206).
+dhoma(15,6,2,1,1,104).
+dhoma(16,2,3,0,1,105).
+dhoma(17,4,4,0,2,207).
+dhoma(18,3,1,0,4,402).
+dhoma(19,5,2,0,4,403).
+dhoma(20,6,4,0,4,404).
+
+
+
+
+
+
+
+%Statusi_i_dhomes(Statusi_ID,Statusi)
+
+statusi_i_dhomes(0,'E zene').
+statusi_i_dhomes(1,'E lire').
+
+
+
+
+
+
+%Lloji_i_dhomes(Lloji_i_dhomes_ID,Lloji,Numri_i_shtreterve)
+
+lloji_i_dhomes(1,'Laborator','').
+lloji_i_dhomes(2,'Sallë e lindjes',7).
+lloji_i_dhomes(3,'Sallë e operacionit',2).
+lloji_i_dhomes(4,'Salla e kujdesit intensiv',5).
+lloji_i_dhomes(5,'Salla e emergjences',6).
+lloji_i_dhomes(6,'Dhomat e kontrollit',4).
+
+
+
+
+
+
+%Hospitalizimi(HID,TID,SID,DID,Dhoma_ID,Diagnoza,Terapia,Data)
+
+hospitalizimi(1,1,5,3,2,'Gastiris acuta','Diazepem','15/6/2016').
+hospitalizimi(2,2,2,1,3,'Arthritis reumatoida','Lorista','21/06/2016').
+hospitalizimi(3,4,3,9,1,'Asthma Bronchialis','Omiprazal','18/06/2016').
+hospitalizimi(4,5,4,1,3,'Angina lacunaris','Bakatrim','21/06/2016').
+hospitalizimi(5,6,5,3,2,'Hepatitis acuta','Cloranphenical','25/06/2016').
+hospitalizimi(6,7,3,7,1,'Hernia inguinalis','Trodon','15/06/2016').
+hospitalizimi(7,8,5,3,3,'Tonsillopharyngitis acuta','Morfine','17/06/2016').
+hospitalizimi(8,9,4,8,6,'Angina Pectors','Ampicilin','29/06/2016').
+hospitalizimi(9,11,3,2,6,'Varicella','Lasix','30/06/2016').
+hospitalizimi(10,12,2,4,1,'Lumboischalgia','Dopamine','29/06/2016').
+hospitalizimi(11,13,5,1,6,'Tahicardia','Ketonal','21/06/2016').
+hospitalizimi(12,15,5,8,6,'Adenokarcinuma','Adrenalin','23/06/2016').
+hospitalizimi(13,16,4,5,4,'Carcinoma metastatic','Atropin','18/06/2016').
+hospitalizimi(14,18,2,3,5,'Pneumania','Penicilin','17/06/2016').
+hospitalizimi(15,19,5,5,4,'Acrimegalia','Aminophylin','16/06/2016').
+
+
+
+
+
+
+
+%Fatura(FID,HID,PID,Pagesa_ID,Banka_ID,?mimi_pa_TVSH,TVSH,Cmimi_total,Data,Data_E_Pageses)
+
+fatura(1,1,1,2,1,100,16,100.16,'15/06/2016','15/06/2016').
+fatura(2,2,9,2,2,200,16,200.16,'21/06/2016','22/06/2016').
+fatura(3,3,7,2,3,150,16,150.16,'18/06/2016','18/06/2016').
+fatura(4,4,2,1,'',250,16,250.16,'21/06/2016','21/06/2016').
+fatura(5,5,6,2,4,450,16,450.16,'25/06/2016','25/06/2016').
+fatura(6,6,3,1,'',50,16,50.16,'15/06/2016','16/06/2016').
+fatura(7,7,5,2,4,100,16,100.16,'17/06/2016','17/06/2016').
+fatura(8,8,8,1,'',60,16,60.16,'29/06/2016','29/06/2016').
+fatura(9,9,9,2,3,75,16,75.16,'30/06/2016','30/06/2016').
+fatura(10,10,10,1,'',200,16,200.16,'29/06/2016','29/06/2016').
+fatura(11,11,4,2,2,250,16,250.16,'21/06/2016','21/06/2016').
+fatura(12,12,2,1,'',240,16,240.16,'23/06/2016','24/06/2016').
+fatura(13,13,5,2,4,260,16,260.16,'18/06/2016','18/06/2016').
+fatura(14,14,6,2,3,300,16,300.16,'17/06/2016','17/06/2016').
+fatura(15,15,9,1,'',500,16,500.16,'16/06/2016','16/06/2016').
+
+
+
+
+
+
+
+%Pagesat(Pagesa_ID,Mënyra e pageses)
+
+pagesat(1,'Cash').
+pagesat(2,'Bankë').
+
+
+
+
+
+%Lloji_i_bankes(Lloji_i_bankes_ID,Banka)
+
+lloji_i_bankes(1,'NLB').
+lloji_i_bankes(2,'Procredit Bank'). 
+lloji_i_bankes(3,'Teb').
+lloji_i_bankes(4,'Raiffeisen Bank').
+
+
+
+%Pacienti(Pid,Emri,Mbiemri,EmriIPrindit,Gjinia,Adresa,Qyteti,Shteti,Kodi Postal,Alergjjite,Grupi_I_Gjakut)
+%Doktori(Did,Rid,Emri,Mbiemri,Titulli,Telefoni,E-mail,Paga,Adresa,Qyteti,Shteti,KodiPostal)
+%Reparti(RID,Reparti,Shefi_i_repartit)
+%Sensoret(SID,Statusi_ID,Lloji_ID,Emri,Prodhuesi,Data E Prodhimit)
+%Sensoret_statusi(Statusi_ID,Statusi)
+%Sensoret_llojet(Lloji_ID,Lloji,Sasia)
+%Terminet(TID,PID,RID,DID,Statusi_I_Terminit_ID,Data,Koha)
+%Statusi_i_termineve(Statusi_I_Terminit_ID,Anuluar)
+%Dhoma(Dhoma_ID,Lloji_i_dhomes_ID,RID,Statusi_ID,Numri_I_Katit,Numri_I_Dhomes)
+%Statusi_i_dhomes(Statusi_ID,Statusi)
+%Lloji_i_dhomes(Lloji_i_dhomes_ID,Lloji,Numri_i_shtreterve)
+%Hospitalizimi(HID,TID,SID,DID,Dhoma_ID,Diagnoza,Terapia,Data)
+%Fatura(FID,HID,PID,Pagesa_ID,Banka_ID,?mimi_pa_TVSH,TVSH,Cmimi_total,Data,Data_E_Pageses)
+%Pagesat(Pagesa_ID,Mënyra e pageses)
+%Lloji_i_bankes(Lloji_i_bankes_ID,Banka)
+
+
+
+
+
+%1.Listoni te gjithe senzoret qe nuk jane ne perdorim nga pacientet
+
+query_11(SID):-hospitalizimi(HID,TID,SID,DID,DhomaID,Diagnoza,Terapia,Data).
+query_12(SID):-sensoret(SID,StatusiID,LlojiID,Emri,Prodhuesi,DataProdhimit).
+query_1(SID):-query_11(SID),not(query_12(SID)).
+
+%2.Cilet (pacient SNN dhe emrat e tyre) kan paguar faturen me vlere mbi 150 Euro
+
+query_2(P,E):-fatura(F1,H1,P1,Q1,W1,E1,R1,D,V1,M1),pacienti(P,E,M,EP,GJ,A,Q,SH,KP,AL,GGJ),P=P1,D>150.
+
+%3.Paraqitni te gjithe Terminet qe jan caktuar neser per Kirurgji
+
+query_31(RID):-reparti(RID,R,SH),R='Kirurgji'.
+query_32(TID,RID):-terminet(TID,PID,RID,DID,StatusiTerminitID,Data,Koha),Data='21/06/2016'.
+query_3(TID):-query_32(TID,RID),query_31(RID1),RID=RID1.
+
+%4.Listoni Id e doktorve(primare) te cilet dje kan pasur dy e me shume hostpitalizme e sot nuk kane pasur asnje
+
+
+query_41(HID,DID):-hospitalizimi(HID,T,S,DID,DhomaID,D,TE,Data),Data='17/06/2016'.
+
+query_42(HID,DID):-hospitalizimi(HID,T,S,DID,DhomaID,D,TE,Data),Data='17/06/2016'.
+
+query_43(DID):-hospitalizimi(HID,T,S,DID,DhomaID,D,TE,Data),not(Data='18/06/2016').
+
+query_44(DID):-query_41(HID1,DID),query_42(HID2,DID2),DID=DID2,not(HID1=HID2).
+
+query_45(DID):-query_43(DID),query_44(DID1),DID=DID1.
+
+
+
